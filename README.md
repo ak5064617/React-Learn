@@ -46,4 +46,21 @@
 
 #BrowsersList 
    - it will use for compatibilty with browsers
-   
+
+
+#JSX 
+ - javascript syntex
+ - JSX help us to create react element in a easier way
+ - JSX is a HTML like syntex
+ - jsx is not HTML inside javascript
+ - it will sanitiz malicious attack, it ill prevent cross-site scripting (XSS).
+
+#babel
+ - it is a package and depedent of parcel
+ - javascript compiler
+ - when we will write any code in app.js, so babel of parcel will transpile into ECMA code before reacing to js engine so (browser) can understand 
+
+#ReactComponent
+
+#CLass Based Component - old (no one uses now)
+#Functional based Component - new
