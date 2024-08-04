@@ -2,8 +2,6 @@
 
 const ResturantCard = (props) => {
     const { cloudinaryImageId , name,cuisines,areaName} = props.cardData.info;
-
-    console.log(props);
   return (
     <div className="card">
       <div className="logo">

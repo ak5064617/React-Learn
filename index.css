@@ -14,6 +14,14 @@
   gap: 30px;
   list-style-type: none;
 }
+.shimmer{
+  width: 225px;
+  height: 245px;
+  border: 1px solid #213332;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px);
+}
 .card{
     width: 225px;
     height: 245px;
@@ -36,6 +44,12 @@
     gap: 30px;
     justify-content: space-evenly;
 }
+.shimmer-container{
+  margin-top: 150px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+}
 .filter-btn > button{
   margin: 20px;
   padding: 5px;
@@ -43,4 +57,14 @@
   width: 250px;
   background: aqua;
   border-radius: 20px;
+}
+.search-box > input{
+    width: 200px;
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 20px;
+}
+.search-box{
+  display: flex;
+  gap: 20px;
 }
