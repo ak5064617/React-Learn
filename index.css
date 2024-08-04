@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid #123312;
+  margin-bottom: 50px;
+}
+.logo-container > img{
+  width: 150px;
+  height: 100px;
+}
+.nav-items > ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+.card{
+    width: 225px;
+    height: 245px;
+    border: 0px solid #213332;
+    background-color: #FFFFFF;
+
+}
+.logo > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px);
+}
+.logo{
+    width: 100%;
+    height: 150px;
+}
+.card-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+.filter-btn > button{
+  margin: 20px;
+  padding: 5px;
+  align-items: center;
+  width: 250px;
+  background: aqua;
+  border-radius: 20px;
+}

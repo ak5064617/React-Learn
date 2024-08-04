@@ -1,7 +1,49 @@
-
-import React from "react";  //import react means it is coming from node module 
+import React from "react"; //import react means it is coming from node module
 import ReactDOM from "react-dom/client";
+import Body from "./src/components/Body";
+import Header from "./src/components/Header";
 
+/*
+    *header
+       -logo
+       -nav items
+    *Body
+        -search
+        -Returant Card
+             - logo
+             - name
+             - rating
+             -
+ */
+const AppLayout = () => {
+  return (
+    <div className="app-layout">
+      <Header />
+      <Body />
+    </div>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<AppLayout />);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 //ReactElement
 const headingElement = React.createElement("h1",{id: "heading"},"React Element => object");    // createElement => javascript object
 console.log(headingElement)
@@ -39,3 +81,5 @@ root.render(JSXheading);   // it will take react element and it will convert int
 root.render(<FunctionalCompoent />); 
 // root.render(<FunctionalCompoent></FunctionalCompoent>)
 // root.render(FunctionalCompoent()); // all above are same 
+
+*/
