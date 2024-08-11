@@ -2,30 +2,45 @@ import React from "react"; //import react means it is coming from node module
 import ReactDOM from "react-dom/client";
 import Body from "./src/components/Body";
 import Header from "./src/components/Header";
+import Offer from "./src/components/Offer";
+import Error from "./src/components/Error";
+import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom"; // RouterProvider and Outlet are inbult components
+import Resturant from "./src/components/Resturant";
 
-/*
-    *header
-       -logo
-       -nav items
-    *Body
-        -search
-        -Returant Card
-             - logo
-             - name
-             - rating
-             -
- */
 const AppLayout = () => {
   return (
     <div className="app-layout">
       <Header />
-      <Body />
+      <Outlet />
     </div>
   );
 };
-
+ const routers = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    errorElement: <Error />,
+    children: [{
+      path: "/",
+      element: <Body />
+    },
+    {
+      path: "/offer",
+      element: <Offer />
+    },
+    {
+      path: "/contact",
+      element: <Offer />
+    },
+    {
+     path: "/card/:resId",
+     element: <Resturant />
+    }
+  ]
+  }
+ ])
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+root.render(<RouterProvider router={routers} />);
 
 
 

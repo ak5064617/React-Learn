@@ -1,0 +1,8 @@
+- make about page
+- make contact page 
+- make returant menu page 
+- call resturant menu API 
+- make routring for about and contact page
+- ErrorComponent
+- use link tag 
+- make dynamic routing for resturant menu
