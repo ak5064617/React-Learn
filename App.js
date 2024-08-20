@@ -6,13 +6,18 @@ import Offer from "./src/components/Offer";
 import Error from "./src/components/Error";
 import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom"; // RouterProvider and Outlet are inbult components
 import Resturant from "./src/components/Resturant";
+import { Provider } from "react-redux";
+import Store from "./src/utils/Store";
+import Cart from "./src/components/Cart";
 
 const AppLayout = () => {
   return (
-    <div className="app-layout">
-      <Header />
-      <Outlet />
-    </div>
+    <Provider store={Store}>   
+       <div className="app-layout">
+         <Header />
+         <Outlet />
+      </div>
+     </Provider>
   );
 };
  const routers = createBrowserRouter([
@@ -35,7 +40,11 @@ const AppLayout = () => {
     {
      path: "/card/:resId",
      element: <Resturant />
+    },{
+       path: "/cart",
+       element: <Cart />
     }
+
   ]
   }
  ])

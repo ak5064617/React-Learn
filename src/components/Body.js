@@ -3,6 +3,7 @@ import ResturantCard from "./ResturantCards";
 import { cards } from "../data/mockdata"; // name inport in case of export const cards
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [cardsData, setcardsData] = useState([]); // Always use inside component, if useState data will change the component will re-render
@@ -74,7 +75,7 @@ const Body = () => {
       </div>
       <div className="flex flex-wrap px-20">
         {filteredCards.map((card, index) => (
-          <ResturantCard key={card.info.id} cardData={card} />
+          <Link to={"card/"+card.info.id }><ResturantCard key={card.info.id} cardData={card} /></Link>
         ))}
       </div>
     </div>

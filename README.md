@@ -64,3 +64,22 @@
 
 #CLass Based Component - old (no one uses now)
 #Functional based Component - new
+
+#Higher Order Components 
+  - it takes function as argument or it will return function 
+
+#controlled and Uncontrolled components 
+   - uncotrolled ==>> a component which will have its own useState
+   - cotrolled ==>> a component which will not have its own useState
+   - *Lifting the state up 
+
+
+#lazy loading
+
+#Custom Hooks
+
+#Props drilling 
+#React Context   ===>> to access data globally across all over the components
+   - createContext => we can create a context
+   - useContext => we can access context by useContext in any component
+   - context provider
